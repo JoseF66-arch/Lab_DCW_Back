@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Consulta Recibida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            background-color: #6a0dad; /* Violeta */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        strong {
+            color: #6a0dad;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Nueva Consulta Recibida</h2>
+        </div>
+        <div class="content">
+            <p>Se ha recibido una nueva consulta a través del formulario de tu sitio web:</p>
+            <ul>
+                <li><strong>Nombre:</strong> {{nombre}}</li>
+                <li><strong>Email:</strong> {{email}}</li>
+                <li><strong>Teléfono:</strong> {{telefono}}</li>
+                <li><strong>Mensaje:</strong></li>
+            </ul>
+            <p style="padding-left: 20px; border-left: 2px solid #6a0dad; margin-left: 10px;">{{mensaje}}</p>
+            <br>
+            <p>Por favor, responde a esta consulta lo antes posible.</p>
+        </div>
+        <div class="footer">
+            <p>Este correo fue enviado automáticamente desde el formulario de contacto de tu sitio web.</p>
+        </div>
+    </div>
+</body>
+</html> 
