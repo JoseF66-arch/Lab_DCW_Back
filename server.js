@@ -20,9 +20,9 @@ const app = express()
 
 // Middlewares globales
 app.use(cors(
-  {origin: ["https://musical-rabanadas-afb5e1.netlify.app", "http://localhost:5000"]}
+  {origin: ["https://tilinazos.netlify.app/", "http://localhost:5000"]}
 ))
-app.use(express.json())
+app.use(express.json())s
 
 // Servir archivos estáticos
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
