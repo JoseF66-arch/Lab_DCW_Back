@@ -22,7 +22,7 @@ const app = express()
 app.use(cors(
   {origin: ["https://tilinazos.netlify.app/", "http://localhost:5000"]}
 ))
-app.use(express.json())s
+app.use(express.json())
 
 // Servir archivos estáticos
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')))
